@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/11 12:12:11 by dwotsche         ###   ########.fr       */
+/*   Created: 2025/09/11 11:55:00 by dwotsche          #+#    #+#             */
+/*   Updated: 2025/09/11 12:14:00 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "push_swap.h"
 
-// error handling
-void	ft_print_error(void);
-int		ft_is_args_correct(int argc, char **argv);
+void	ft_print_error(void)
+{
+	ft_putstr_fd("Error\n", 1);
+	exit(0);
+}
 
-# include "../lib/libft/include/libft.h"
-# include "../lib/printf/include/ft_printf.h"
+int	ft_is_args_correct(int argc, char **argv)
+{
+	long	val;
 
-#endif
+	val = 0;
+	if (argc != 2)
+		return (0);
+	val = ft_atoi(argv[1]);
+	return (val);
+}
