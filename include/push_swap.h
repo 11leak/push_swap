@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/12 14:20:09 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/12 15:27:58 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ typedef struct s_list
 	struct s_list	*next;
 }				t_list;
 
-// error handling
+// error_handling
 void	ft_print_error(void);
 
-// list_helper
+// list_helpers
 t_list	*lst_new(int value);
 int		lst_size(t_list *head);
 t_list	*lst_last(t_list *head);
@@ -37,5 +37,18 @@ void	lst_add_front(t_list **head, t_list *node);
 void	lst_add_back(t_list **head, t_list *node);
 void	lst_clear(t_list **head);
 t_list	*lst_pop_front(t_list **head);
+
+// stack_operations
+void	sa(t_list **a);
+void	sb(t_list **b);
+void	ss(t_list **a, t_list **b);
+void	pa(t_list **a, t_list **b);
+void	pb(t_list **a, t_list **b);
+void	ra(t_list **a);
+void	rb(t_list **b);
+void	rr(t_list **a, t_list **b);
+void	rra(t_list **a);
+void	rrb(t_list **b);
+void	rrr(t_list **a, t_list **b);
 
 #endif
