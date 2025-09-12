@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 15:29:55 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/12 15:31:35 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/12 16:24:58 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 // ----- reverse rotate
 int	reverse_rotate(t_list **head)
 {
-	t_list *before_last;
-	t_list *last;
+	t_list	*before_last;
+	t_list	*last;
 
 	if (!head || !*head || !(*head)->next)
 		return (0);

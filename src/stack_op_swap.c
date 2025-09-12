@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 15:28:42 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/12 15:30:26 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/12 16:25:11 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 // ----- swap
 int	swap(t_list **head)
 {
-	t_list *first;
-	t_list *second;
+	t_list	*first;
+	t_list	*second;
 
 	if (!head || !*head || !(*head)->next)
 		return (0);
