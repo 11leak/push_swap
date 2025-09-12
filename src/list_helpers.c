@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack_helpers.c                                    :+:      :+:    :+:   */
+/*   list_helper.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 13:17:50 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/11 14:36:02 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/12 14:27:18 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,8 @@ void	lst_clear(t_list **head)
 	*head = NULL;
 }
 
-t_list *lst_pop_front(t_list **head)
+// entfernt den ersten Knoten (Head) einer verketteten Liste und gibt ihn zurück
+t_list	*lst_pop_front(t_list **head)
 {
 	t_list *node;
 
