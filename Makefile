@@ -6,7 +6,7 @@
 #    By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 12:04:07 by dwotsche          #+#    #+#              #
-#    Updated: 2025/09/11 12:11:46 by dwotsche         ###   ########.fr        #
+#    Updated: 2025/09/12 15:37:18 by dwotsche         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,13 @@ NAME    = $(BIN_DIR)/push_swap
 
 # Quellen & Objekte
 SRCS    = $(SRC_DIR)/main.c \
-          $(SRC_DIR)/error_handling.c
+          $(SRC_DIR)/error_handling.c \
+		  $(SRC_DIR)/args_handling.c \
+		  $(SRC_DIR)/list_helpers.c \
+		  $(SRC_DIR)/stack_op_swap.c \
+		  $(SRC_DIR)/stack_op_push.c \
+		  $(SRC_DIR)/stack_op_rotate.c \
+		  $(SRC_DIR)/stack_op_reverse_rotate.c
 OBJS    = $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 # Bibliotheken
