@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/12 16:23:12 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/12 18:39:18 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define PUSH_SWAP_H
 
 # include <stdlib.h>
+# include <limits.h>
 # include "../lib/libft/include/libft.h"
 # include "../lib/printf/include/ft_printf.h"
 
@@ -24,6 +25,9 @@ typedef struct s_list
 	int				index;
 	struct s_list	*next;
 }				t_list;
+
+// args_handling
+int		parse_args_to_stack(int argc, char **argv, t_list **a);
 
 // error_handling
 void	ft_print_error(void);
