@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 16:13:00 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/15 15:26:41 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/15 15:43:12 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	get_max_bits(t_list *a)
 	{
 		if (a->index > max)
 			max = a->index;
-		a = a->index;
+		a = a->next;
 	}
 	while ((max >> bits) != 0)
 		bits++;
