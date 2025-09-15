@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:43:13 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/12 16:06:23 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/15 14:41:57 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,28 @@
 
 int	main(int argc, char **argv)
 {
-	
+	t_list	*a;
+	t_list	*b;
+
+	a = NULL;
+	b = NULL;
+	if (argc <= 1)
+		return (0);
+	if (!parse_args_to_stack(argc, argv, &a))
+		ft_putstr_fd("Error\n", 2);
+		lst_clear(&a);
+		return (1);
+	if (is_sorted(a))
+		return (lst_clear(&a), 0);
+	if (lst_size(a) <= 5)
+	{
+		return (0);
+	}
+	else
+	{
+		return (0);
+	}
+	lst_clear(&a);
+	lst_clear(&b);
 	return (0);
 }
