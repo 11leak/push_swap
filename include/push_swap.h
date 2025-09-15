@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/12 18:39:18 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/15 14:21:56 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@ typedef struct s_list
 
 // args_handling
 int		parse_args_to_stack(int argc, char **argv, t_list **a);
+int		is_valid_input(const char *str, long *val);
+int		is_valid_number(const char *str);
+int		atoi_long(const char *s, long *out);
+int		has_duplicates(t_list *a);
 
 // error_handling
 void	ft_print_error(void);
