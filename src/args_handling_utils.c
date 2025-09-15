@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 13:27:39 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/15 13:51:07 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/15 14:43:54 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,12 @@ int	has_duplicates(t_list *a)
 	return (0);
 }
 
+void	atoi_long_util(int *sign, char c)
+{
+	if (c == '-')
+		*sign = -1;
+}
+
 int	atoi_long(const char *s, long *out)
 {
 	int		i;
@@ -90,10 +96,4 @@ int	atoi_long(const char *s, long *out)
 		return (0);
 	*out = acc * sign;
 	return (1);
-}
-
-void	atoi_long_util(int *sign, char c)
-{
-	if (c == '-')
-		*sign = -1;
 }
