@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/16 14:10:40 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/16 14:29:16 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,6 @@ void	index_sort(int *array, int n);
 
 // radix_sort
 void	radix_sort(t_list **a, t_list **b);
+void	index_allocation(t_list *a);
 
 #endif
