@@ -6,7 +6,7 @@
 #    By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 12:04:07 by dwotsche          #+#    #+#              #
-#    Updated: 2025/09/16 15:04:08 by dwotsche         ###   ########.fr        #
+#    Updated: 2025/09/16 16:41:34 by dwotsche         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,9 @@ SRCS    = $(SRC_DIR)/main.c \
 		  $(SRC_DIR)/stack_op_rotate.c \
 		  $(SRC_DIR)/stack_op_reverse_rotate.c \
 		  $(SRC_DIR)/sort_utils.c \
-		  $(SRC_DIR)/radix_sort.c
+		  $(SRC_DIR)/radix_sort.c \
+		  $(SRC_DIR)/small_sort.c \
+		  $(SRC_DIR)/small_sort_utils.c
 OBJS    = $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 # Bibliotheken

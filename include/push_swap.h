@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/16 15:04:50 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/16 16:27:58 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,10 @@ void	index_sort(int *array, int n);
 // radix_sort
 void	radix_sort(t_list **a, t_list **b);
 void	index_allocation(t_list *a);
+
+// small_sort
+void	small_sort(t_list **a, t_list **b);
+int		get_smallest_nbr_pos(t_list *a);
+void	move_node_to_top(t_list **a, int pos);
 
 #endif
