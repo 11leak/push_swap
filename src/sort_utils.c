@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 16:13:00 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/16 14:13:39 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/16 14:25:02 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,14 @@ int	get_max_bits(t_list *a)
 }
 
 // insertion sort
-void	index_sort(int *array, int n)
+void	index_sort(int *array, int size)
 {
 	int	i;
 	int	j;
 	int	k;
 
 	i = 1;
-	while (i < n)
+	while (i < size)
 	{
 		k = array[i];
 		j = i - 1;
