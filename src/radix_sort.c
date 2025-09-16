@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:34:37 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/16 14:26:36 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/16 14:58:18 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,15 @@ int	find_pos_in_array(int *array, int size, int val)
 		i++;
 	}
 	return (-1);
+}
+
+void	index_allocation_util(t_list *head, int *array, int size)
+{
+	while (head)
+	{
+		head->index = find_pos_in_array(array, size, head->value);
+		head = head->next;
+	}
 }
 
 void	index_allocation(t_list *a)
@@ -47,12 +56,7 @@ void	index_allocation(t_list *a)
 		head = head->next;
 	}
 	index_sort(array, size);
-	head = a;
-	while (head)
-	{
-		head->index = find_pos_in_array(array, size, head->value);
-		head = head->next;
-	}
+	index_allocation_util(a, array, size);
 	free(array);
 }
 

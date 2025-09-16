@@ -6,7 +6,7 @@
 /*   By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:39:51 by dwotsche          #+#    #+#             */
-/*   Updated: 2025/09/16 14:29:16 by dwotsche         ###   ########.fr       */
+/*   Updated: 2025/09/16 15:04:50 by dwotsche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,6 @@ int		is_valid_input(const char *str, long *val);
 int		is_valid_number(const char *str);
 int		atoi_long(const char *s, long *out);
 int		has_duplicates(t_list *a);
-
-// error_handling
-void	ft_print_error(void);
 
 // list_helpers
 t_list	*lst_new(int value);

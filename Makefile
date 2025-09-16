@@ -6,7 +6,7 @@
 #    By: dwotsche <dwotsche@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 12:04:07 by dwotsche          #+#    #+#              #
-#    Updated: 2025/09/16 14:30:36 by dwotsche         ###   ########.fr        #
+#    Updated: 2025/09/16 15:04:08 by dwotsche         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,6 @@ NAME    = $(BIN_DIR)/push_swap
 
 # Quellen & Objekte
 SRCS    = $(SRC_DIR)/main.c \
-          $(SRC_DIR)/error_handling.c \
 		  $(SRC_DIR)/args_handling.c \
 		  $(SRC_DIR)/args_handling_utils.c \
 		  $(SRC_DIR)/list_helpers.c \
